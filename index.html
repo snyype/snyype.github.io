@@ -1,208 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <!-- Essential Meta Tags -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Config Helper - Game Configurations and Launch Options - snype forum</title>
-  <meta name="description"
-    content="Get optimized game configurations and launch options for CS:GO, Dota 2, and more. Customize your gaming experience with Config Helper.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SNYYPE.GG — Game Configs &amp; Launch Options</title>
+  <meta name="description" content="Get optimized game configurations and launch options for CS:GO, Dota 2, and more. Customize your gaming experience with Config Helper." />
   <meta name="google-site-verification" content="oM8Rwt6te9ioLdOCD-WJ7dvh6xWDexEySzy2sgl4hBw" />
-  <!-- Open Graph Meta Tags (for social sharing) -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Config Helper - Game Configurations and Launch Options">
-  <meta property="og:description"
-    content="Discover the best game configurations and launch options for CS:GO, Dota 2, and more.">
-  <meta property="og:image" content="https://snyype.github.io/logo/snype.ico"> <!-- Replace with actual image URL -->
-  <meta property="og:url" content="https://snyype.github.io"> <!-- Replace with your site URL -->
 
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Config Helper - Game Configurations and Launch Options">
-  <meta name="twitter:description" content="Optimize your gameplay with our game configs for CS:GO, Dota 2, and more.">
-  <meta name="twitter:image" content="https://snyype.github.io/logo/snype.ico"> <!-- Replace with actual image URL -->
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SNYYPE.GG — Game Configs &amp; Launch Options" />
+  <meta property="og:description" content="Optimized game configurations and launch options for CS:GO, Dota 2, and more." />
+  <meta property="og:image" content="https://snyype.github.io/logo/snype.ico" />
+  <meta property="og:url" content="https://snyype.github.io" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="logo/snype.ico" type="image/x-icon">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SNYYPE.GG — Game Configs &amp; Launch Options" />
+  <meta name="twitter:description" content="Optimize your gameplay with our game configs for CS:GO, Dota 2, and more." />
+  <meta name="twitter:image" content="https://snyype.github.io/logo/snype.ico" />
 
-  <!-- Canonical Link -->
-  <link rel="canonical" href="https://snyype.github.io"> <!-- Replace with your site's main URL -->
+  <link rel="icon" href="logo/snype.ico" type="image/x-icon" />
+  <link rel="canonical" href="https://snyype.github.io" />
 
-  <!-- Schema.org Structured Data for SEO -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Website",
-    "name": "Config Helper - snype forum",
-    "url": "https://snyype.github.io", <!-- Replace with your URL -->
+    "name": "SNYYPEGG - Game Configs",
+    "url": "https://snyype.github.io",
     "description": "Get optimized game configurations and launch options for CS:GO, Dota 2, and more.",
     "publisher": {
-      "@type": "SnYpe",
-      "name": "Config Helper",
+      "@type": "Organization",
+      "name": "SNYYPEGG",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://snyype.github.io/logo/snype.ico" <!-- Replace with actual logo URL -->
+        "url": "https://snyype.github.io/logo/snype.ico"
       }
-    },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://snyype.github.io/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
     }
   }
   </script>
 
-  <!-- Tailwind and SweetAlert -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
-
-<body class="bg-gray-100 text-gray-800">
-
-  <!-- Header -->
-  <header class="bg-indigo-700 py-6">
-    <div class="max-w-7xl mx-auto text-center">
-      <h1 class="text-white text-4xl font-bold">CONFIGS</h1>
-      <p class="text-indigo-200 mt-2 typewriter">Get Configs for your game</p>
+  <!-- Navigation -->
+  <nav class="topnav">
+    <div class="topnav-inner">
+      <a href="/" class="brand">SNYYPE<span>GG</span></a>
+      <div class="nav-links">
+        <a href="#" class="nav-link active">Configs</a>
+      </div>
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span class="status-text">Online</span>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <!-- Main Content -->
-  <main class="max-w-7xl mx-auto mt-8 p-6 bg-white rounded-lg shadow-lg">
-    <!-- Forum Post -->
-    <section class="forum-post border-b-2 pb-6 mb-6">
-      <div class="flex items-center mb-4">
-        <img src="/csgo/cs_logo.jpg" alt="User Avatar" class="w-12 h-12 rounded-full shadow-lg">
-        <div class="ml-4">
-          <h2 class="text-xl font-semibold text-gray-900">Counter-Strike: Global Offensive</h2>
-          <p class="text-sm text-gray-500">Posted by <span class="text-indigo-600">snype</span> on Sep 30, 2024</p>
+  <!-- Board Header -->
+  <div class="board-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <span>SNYYPEGG</span>
+        <span class="sep">›</span>
+        <span class="current">Game Configs</span>
+      </div>
+      <h1 class="board-title">Game Configurations</h1>
+      <p class="board-desc">Optimized configs and launch options for competitive play. All configs are free and regularly updated.</p>
+      <div class="board-stats">
+        <div class="stat">
+          <span class="stat-value">3</span>
+          <span class="stat-label">Games</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-value">1</span>
+          <span class="stat-label">Config</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat">
+          <span class="stat-value">Free</span>
+          <span class="stat-label">Always</span>
         </div>
       </div>
-      <p class="text-gray-700 mb-4">
-        CS:GO is a first-person shooter game developed by Valve. It features competitive gameplay, various maps, and
-        community-created content. What's your favorite map and why?
-      </p>
-      <div class="flex items-center space-x-4">
+    </div>
+  </div>
 
-        <button id="copy-csgo-launch-option"
-          class="flex items-center text-indigo-600 hover:text-indigo-800 transition duration-300">
-          <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6M12 9v6"></path>
-          </svg>
-          Copy Launch Option
-        </button>
+  <!-- Forum Board -->
+  <main class="board-main">
+    <div class="container">
+
+      <div class="thread-list-header">
+        <span>Thread</span>
+        <span>Actions</span>
       </div>
-      <button id="download-config"
-        class="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg shadow-lg hover:bg-green-600 transition duration-300">Download
-        Config</button>
-    </section>
 
-    <!-- Forum Post -->
-    <section class="forum-post border-b-2 pb-6 mb-6">
-      <div class="flex items-center mb-4">
-        <img src="/dota/dota_logo.jpg" alt="User Avatar" class="w-12 h-12 rounded-full shadow-lg">
-        <div class="ml-4">
-          <h2 class="text-xl font-semibold text-gray-900">Dota 2</h2>
-          <p class="text-sm text-gray-500">Posted by <span class="text-indigo-600">snype</span> on Sep 29, 2024</p>
+      <!-- CS:GO Thread -->
+      <article class="thread pinned" id="csgo-thread">
+        <div class="thread-top">
+          <div class="thread-left">
+            <div class="thread-badges">
+              <span class="badge badge-pin">&#x1F4CC; PINNED</span>
+              <span class="badge badge-game">CS2 / CS:GO</span>
+              <span class="badge badge-live">ACTIVE</span>
+            </div>
+            <div class="thread-title-row">
+              <img src="/csgo/cs_logo.jpg" alt="CS:GO" class="game-icon" />
+              <div>
+                <h2 class="thread-title">CS:GO / CS2 &mdash; Full Config &amp; Launch Options</h2>
+                <p class="thread-desc">Complete autoexec.cfg with network optimization, viewmodel tweaks, jump-throw alias, buy macros, and performance settings.</p>
+              </div>
+            </div>
+            <div class="thread-meta">
+              <span>Posted by <strong>snyype</strong></span>
+              <span class="dot">&middot;</span>
+              <span>Sep 30, 2024</span>
+            </div>
+          </div>
+          <div class="thread-right">
+            <button class="btn btn-gold" onclick="copyLaunchOption('csgo')">Copy Launch Options</button>
+            <button class="btn btn-ghost" onclick="downloadConfig('csgo')">Download Config</button>
+          </div>
         </div>
-      </div>
-      <p class="text-gray-700 mb-4">
-        Dota 2 is a multiplayer online battle arena game developed by Valve.
-      </p>
-      <div class="flex items-center space-x-4">
-        <button id="copy-dota2-launch-option"
-          class="flex items-center text-indigo-600 hover:text-indigo-800 transition duration-300">
-          <svg class="w-5 h-5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6M12 9v6"></path>
-          </svg>
-          Copy Launch Option
-        </button>
-      </div>
-      <button id="download-config-dota"
-        class="mt-4 px-4 py-2 bg-green-500 text-white rounded-lg shadow-lg hover:bg-green-600 transition duration-300">Download
-        Config</button>
-    </section>
+        <div class="thread-body">
+          <div class="body-col">
+            <h3 class="body-heading">Launch Options</h3>
+            <code class="launch-code" id="csgo-launch">Loading...</code>
+          </div>
+          <div class="body-col">
+            <h3 class="body-heading">Config Includes</h3>
+            <ul class="feature-list">
+              <li>Jump throw alias for consistent grenade throws</li>
+              <li>Optimized network settings (rate, interp, cmdrate, updaterate)</li>
+              <li>Custom viewmodel &mdash; FOV, position, recoil</li>
+              <li>Movement tweaks &mdash; reduced bobbing &amp; sway</li>
+              <li>Numpad buy macros for fast purchasing</li>
+              <li>FPS cap and performance tuning</li>
+            </ul>
+          </div>
+        </div>
+      </article>
 
+      <!-- Dota 2 Thread -->
+      <article class="thread pinned" id="dota-thread">
+        <div class="thread-top">
+          <div class="thread-left">
+            <div class="thread-badges">
+              <span class="badge badge-pin">&#x1F4CC; PINNED</span>
+              <span class="badge badge-game">DOTA 2</span>
+            </div>
+            <div class="thread-title-row">
+              <img src="/dota/dota_logo.jpg" alt="Dota 2" class="game-icon" />
+              <div>
+                <h2 class="thread-title">Dota 2 &mdash; Launch Options</h2>
+                <p class="thread-desc">Optimized Dota 2 launch options for improved performance, reduced input lag, and DirectX 11.</p>
+              </div>
+            </div>
+            <div class="thread-meta">
+              <span>Posted by <strong>snyype</strong></span>
+              <span class="dot">&middot;</span>
+              <span>Sep 29, 2024</span>
+            </div>
+          </div>
+          <div class="thread-right">
+            <button class="btn btn-gold" onclick="copyLaunchOption('dota2')">Copy Launch Options</button>
+            <button class="btn btn-ghost btn-disabled" disabled>Config: Coming Soon</button>
+          </div>
+        </div>
+        <div class="thread-body">
+          <div class="body-col">
+            <h3 class="body-heading">Launch Options</h3>
+            <code class="launch-code" id="dota-launch">Loading...</code>
+          </div>
+        </div>
+      </article>
+
+      <!-- Valorant Thread (Locked) -->
+      <article class="thread thread-locked">
+        <div class="thread-top">
+          <div class="thread-left">
+            <div class="thread-badges">
+              <span class="badge badge-soon">&#x1F512; COMING SOON</span>
+              <span class="badge badge-game">VALORANT</span>
+            </div>
+            <div class="thread-title-row">
+              <img src="/valorant/valo_logo.jpg" alt="Valorant" class="game-icon game-icon-muted" />
+              <div>
+                <h2 class="thread-title thread-title-muted">Valorant &mdash; Config &amp; Launch Options</h2>
+                <p class="thread-desc thread-desc-muted">Config and launch options for Valorant are currently being worked on. Check back soon.</p>
+              </div>
+            </div>
+            <div class="thread-meta">
+              <span>by <strong>snyype</strong></span>
+              <span class="dot">&middot;</span>
+              <span>Coming soon</span>
+            </div>
+          </div>
+          <div class="thread-right">
+            <button class="btn btn-disabled" disabled>Not Available</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
   </main>
 
-  <script>
-    // Function to fetch .updateables file and parse its content
-    async function fetchLaunchOptions() {
-      const response = await fetch('/updateables'); // Assuming the .updateables file is in the root directory
-      const text = await response.text();
-      const lines = text.split('\n');
-      const launchOptions = {};
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">SNYYPE<span>GG</span></div>
+      <p class="footer-sub">Game configs for competitive players. Free forever.</p>
+      <p class="footer-copy">&copy; 2024 snyype.github.io &mdash; Not affiliated with Valve, Riot Games, or any game studio.</p>
+    </div>
+  </footer>
 
-      let currentGame = null;
-      lines.forEach(line => {
-        line = line.trim();
-        if (line.startsWith('[')) {
-          currentGame = line.replace('[', '').replace(']', '');
-        } else if (line.startsWith('launch_option') && currentGame) {
-          launchOptions[currentGame] = line.split('=')[1].trim();
-        }
-      });
-
-      return launchOptions;
-    }
-
-    // Fetch launch options and assign to buttons
-    fetchLaunchOptions().then(launchOptions => {
-      // CS:GO
-      document.getElementById('copy-csgo-launch-option').addEventListener('click', () => {
-        const option = launchOptions['csgo'];
-        if (option) {
-          navigator.clipboard.writeText(option).then(() => {
-            Swal.fire({
-              icon: 'success',
-              title: 'Copied!',
-              text: 'Launch option for CS:GO copied to clipboard!',
-            });
-          });
-        }
-      });
-
-      // Dota 2
-      document.getElementById('copy-dota2-launch-option').addEventListener('click', () => {
-        const option = launchOptions['dota2'];
-        if (option) {
-          navigator.clipboard.writeText(option).then(() => {
-            Swal.fire({
-              icon: 'success',
-              title: 'Copied!',
-              text: 'Launch option for Dota 2 copied to clipboard!',
-            });
-          });
-        }
-      });
-
-      // Download Config - CS:GO
-      document.getElementById('download-config').addEventListener('click', () => {
-        const configContent = launchOptions['csgo'] || '';
-        downloadFile(configContent, 'autoexec.cfg', 'text/plain');
-      });
-
-      // Download Config - Dota 2
-      document.getElementById('download-config-dota').addEventListener('click', () => {
-        const configContent = launchOptions['dota2'] || '';
-        downloadFile(configContent, 'dota2_config.cfg', 'text/plain');
-      });
-    });
-
-    // Function to download file
-    function downloadFile(content, fileName, contentType) {
-      const a = document.createElement('a');
-      const file = new Blob([content], { type: contentType });
-      a.href = URL.createObjectURL(file);
-      a.download = fileName;
-      a.click();
-    }
-  </script>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
